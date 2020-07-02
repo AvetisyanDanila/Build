@@ -1,0 +1,43 @@
+.faq
+    padding-top: 100px
+    @media screen and ( max-width: 991px )
+        padding-top: 50px
+    &-block
+        &__item
+            margin-bottom: 40px
+        &__title
+            display: inline-block
+            font-size: 24px
+            line-height: 36px
+            color: #F7654A
+            position: relative
+            padding-left: 30px
+            cursor: pointer
+            &:before, &:after
+                content: ''
+                width: 10px
+                height: 2px
+                background-color: #F7654A
+                position: absolute
+                top: 18px
+                transition: 0.3s
+            &:before
+                transform: rotate(40deg)
+                left: 0
+            &:after
+                transform: rotate(-40deg)
+                left: 7px
+            &.active
+                &::before, &::after
+                    background-color: #F7654A
+                &::before
+                    transform: rotate(-40deg)
+                &::after
+                    transform: rotate(40deg)
+        &__text
+            font-family: 'OpenSans Regular'
+            font-size: 16px
+            line-height: 22px
+            color: #999999
+            padding-top: 10px
+            display: none

@@ -1,0 +1,40 @@
+@import 'fonts.sass'
+@import 'blocks/_header.sass'
+@import 'blocks/_main.sass'
+@import 'blocks/_numbers.sass'
+@import 'blocks/_projects.sass'
+@import 'blocks/_request.sass'
+@import 'blocks/_about.sass'
+@import 'blocks/_faq.sass'
+@import 'blocks/_partners.sass'
+@import 'blocks/_reviews.sass'
+@import 'blocks/_contacts.sass'
+@import 'blocks/_footer.sass'
+@import 'blocks/_popup.sass'
+
+.body.lock
+    overflow: hidden
+.body
+    font-family: 'Oswald Medium'
+.arrow
+    background-color: transparent
+    border: none
+    &:focus
+        outline: none
+    & svg
+        width: 25px
+        height: 25px
+        & path
+            fill: #F7654A
+.title
+    font-size: 36px
+    line-height: 53px
+    text-align: center
+    text-transform: uppercase
+    color: #000
+    margin-bottom: 60px
+    @media screen and ( max-width: 767px )
+        font-size: 24px
+        line-height: 32px
+    @media screen and ( max-width: 991px )
+        margin-bottom: 30px

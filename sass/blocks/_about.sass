@@ -1,0 +1,37 @@
+.about
+    padding-top: 100px
+    @media screen and ( max-width: 991px )
+        padding-top: 50px
+    &-blocks
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &-block
+        width: calc( 33% - 30px )
+        background-color: #F7F7F7
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 30px
+        margin-bottom: 30px
+        padding: 60px 80px
+        &:nth-of-type(3n)
+            margin-right: 0
+        @media screen and ( max-width: 991px )
+            width: calc( 50% - 30px )
+            &:nth-of-type(3n)
+                margin-right: 30px!important
+            &:nth-of-type(even)
+                margin-right: 0!important
+        @media screen and ( max-width: 575px )
+            width: 100%
+            margin-right: 0!important
+            &:nth-of-type(3n)
+                margin-right: 0!important
+        &__title
+            font-size: 21px
+            line-height: 31px
+            text-align: center
+            letter-spacing: 0.02em
+            color: #000
+            margin-top: 30px

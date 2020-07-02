@@ -1,0 +1,51 @@
+.contacts
+    padding-top: 100px
+    margin-bottom: 100px
+    @media screen and ( max-width: 991px )
+        margin-bottom: 50px
+    @media screen and ( max-width: 991px )
+        padding-top: 50px
+        margin-bottom: 0px
+    & a 
+        text-decoration: none
+        outline: none
+    &-blocks
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width: 991px )
+            flex-wrap: wrap
+    &-block
+        display: flex
+        flex-direction: column
+        @media screen and ( max-width: 991px )
+            width: 50%
+            align-items: center
+            margin-bottom: 50px
+        @media screen and ( max-width: 575px )
+            width: 100%
+        &__name
+            font-size: 24px
+            line-height: 36px
+            text-align: center
+            color: #999999
+            margin: 25px 0
+            @media screen and ( max-width: 575px )
+                font-size: 22px
+                line-height: 32px
+        &__info
+            font-size: 24px
+            line-height: 36px
+            text-align: center
+            color: #000
+            max-width: 255px
+            @media screen and ( max-width: 575px )
+                font-size: 22px
+                line-height: 32px
+            &_mail
+                color: #F7654A
+                &:hover
+                    color: #F7654A!important
+            &:hover
+                color: #000
+        &__img
+            height: 49px

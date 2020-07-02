@@ -1,0 +1,48 @@
+.numbers
+    transform: translateY(-50%)
+    &-blocks
+        display: flex
+        justify-content: space-between
+        background-color: #F7F7F7
+        width: 100%
+        padding: 50px 100px
+        @media screen and ( max-width: 991px )
+            padding: 30px 70px
+        @media screen and ( max-width: 575px )
+            padding: 10px 20px
+    &-block
+        &__num
+            display: block
+            font-size: 72px
+            line-height: 107px
+            text-align: center
+            text-transform: uppercase
+            color: #F7654A
+            @media screen and ( max-width: 991px )
+                font-size: 52px
+                line-height: 86px
+            @media screen and ( max-width: 575px )
+                font-size: 28px
+                line-height: 36px
+        &__years
+            display: block
+            font-size: 36px
+            line-height: 53px
+            text-align: center
+            text-transform: uppercase
+            color: #000
+            @media screen and ( max-width: 991px )
+                font-size: 28px
+                line-height: 36px
+            @media screen and ( max-width: 575px )
+                font-size: 18px
+                line-height: 24px
+        &__work
+            display: block
+            font-size: 18px
+            line-height: 27px
+            text-align: center
+            color: #999999
+            @media screen and ( max-width: 575px )
+                font-size: 14px
+                line-height: 22px

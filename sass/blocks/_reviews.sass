@@ -1,0 +1,65 @@
+.reviews
+    padding-top: 100px
+    margin-bottom: 100px
+    @media screen and ( max-width: 991px )
+        padding-top: 50px
+        margin-bottom: 50px
+    &__body
+        position: relative
+    &-block
+        @media screen and ( max-width: 575px )
+            padding: 0 20px
+        &_top
+            padding: 38px 30px
+            background-color: #F7F7F7
+            margin-bottom: 30px
+        &__text
+            font-family: 'OpenSans Regular'
+            font-size: 14px
+            line-height: 21px
+            color: #999999
+            max-width: 290px
+            margin-top: 15px
+            @media screen and ( max-width: 767px )
+                max-width: 100%
+        &__name
+            font-size: 21px
+            line-height: 31px
+            letter-spacing: 0.02em
+            color: #000
+            @media screen and ( max-width: 575px )
+                font-size: 16px
+                line-height: 22px
+        &__workplace
+            color: #F7654A
+    &__arrow
+        &_prev
+            position: absolute
+            top: 52%
+            left: -4%
+            @media screen and ( max-width: 1199px )
+                top: 50%
+                left: -3.5%
+            @media screen and ( max-width: 991px )
+                left: -4.5%
+            @media screen and ( max-width: 767px )
+                top: 45%
+                left: -6.5%
+            @media screen and ( max-width: 575px )
+                display: none
+            z-index: 1
+        &_next
+            position: absolute
+            top: 52%
+            right: -4%
+            @media screen and ( max-width: 1199px )
+                top: 50%
+                right: -3.5%
+            @media screen and ( max-width: 991px )
+                right: -4.5%
+            @media screen and ( max-width: 767px )
+                top: 45%
+                right: -6.5%
+            @media screen and ( max-width: 575px )
+                display: none
+            z-index: 1
